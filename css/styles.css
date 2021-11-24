@@ -168,8 +168,8 @@ html {
   h1 {
     font-size: 12.25pt;
     font-weight: bold;
-    margin-top: 15px;
-    margin-bottom: 0px;
+    margin-top: 17px;
+    margin-bottom: 15px;
   }
   
   .sidebar ul {
@@ -184,7 +184,7 @@ html {
     grid-template-columns: 170px 115px;
     grid-template-rows: 176px;
     grid-column-gap: 15px;
-    margin-bottom: 12px;
+    margin-bottom: 45px;
   }
   
   .profile-picture p {
@@ -193,13 +193,12 @@ html {
   
   .profile-pic {
     grid-area: 1/1;
-    margin-top: 10px;
+    max-width: 150px;
     margin-bottom: 10px;
   }
   
   .personal-msg {
     grid-area: 1/2;
-    margin: 0;
   }
   
   .gender-age {
@@ -207,7 +206,7 @@ html {
   }
   
   .gender-age li:first-child {
-    margin-top: 28px;
+    margin-top: 35px;
   }
   
   .last-login {
@@ -217,12 +216,6 @@ html {
   
   .last-login li:last-child {
     margin-bottom: 15px;
-  }
-  
-  .pics-videos {
-    grid-area: 1/1;
-    justify-self: center;
-    align-self: end;
   }
   
   /* Contact */
@@ -250,7 +243,6 @@ html {
   }
   
   /* Myspace url */
-
   .myspace-url-box {
     border: 1px solid rgb(102, 153, 204);
     height: 26px;
@@ -274,7 +266,6 @@ html {
   }
   
   /* Sidebar Table Class */
-
   .sidebar-table {
     border: 2px solid rgb(102, 153, 204);
     display: table;
@@ -435,7 +426,7 @@ html {
   .friend-pic-container {
     display: grid;
     grid-template-columns: repeat(4, 109px);
-    grid-template-rows: 160px 193px;
+    grid-template-rows: 160px 173px;
   }
   
   .friend-pic-container figure {
@@ -449,6 +440,7 @@ html {
   .friend-pic-container img {
     display: block;
     margin: auto;
+    max-width: 100px;
   }
   
   .friends-list-link {
@@ -503,10 +495,15 @@ html {
   .comment-wall figcaption,
   .comment-wall figure {
     margin: 0;
+    max-width: 100px;
   }
   
   .comment-wall figcaption {
     margin-bottom: 1em;
+  }
+
+  .comment-wall img {
+    max-width: 150px;
   }
   
   .comment-wall figure {
@@ -571,4 +568,36 @@ html {
     height: 100%;
     font-size: 8pt;
     font-weight: normal;
+  }
+
+
+  /* Pics page */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .gallery img {
+    margin: 1.75em 1.25em;
+  }
+  
+  figcaption {
+    text-align: center;
+    font-family: var(--primary-font);
+  } 
+  
+  .pic-one {
+    object-position: top center;
+  }
+  
+  .pic-three, .pic-four {
+    object-position: top center;
+    object-fit: fill;
+  }
+  
+  .pic-five {
+    object-fit: cover;
+    object-position: top center;
   }
