@@ -264,6 +264,17 @@ html {
     padding-left: 6px;
     ;
   }
+
+  /* Music box */
+  .music-box {
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+
+  .music {
+    height: 60px;
+    width: 300px;
+  }
   
   /* Sidebar Table Class */
   .sidebar-table {
